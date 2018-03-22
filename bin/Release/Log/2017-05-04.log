@@ -1,0 +1,2 @@
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/5/4 21:13:48
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/5/4 22:06:13

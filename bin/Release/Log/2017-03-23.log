@@ -1,0 +1,1 @@
+【正常】：模块名称：，执行语句：update t_systemCode set userdefine2 = userdefine2+1 , userdefine3 = '2017-03-23' where codeid = '0' and codetype = 'AppVersion'，执行时间：2017-03-23 14:51:57

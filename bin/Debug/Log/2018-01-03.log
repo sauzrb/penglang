@@ -1,0 +1,11 @@
+【正常】：模块名称：BackBoundDetailView-SaveBackboundDetail，执行语句：Insert into T_OutboundRecord (RecordID, OutboundID, DetailID, ShelfNo, LotNo, SizeNo, NumofPlan, NumofReal, PlanDateTime, DealStatus )  Values ( '365d683899ea4b5195bbafe5d4221870', '2017082814530453402','20170828150128128020000', '18A01','15002','L42',1,1,'','BackBound')，执行时间：2018-01-03 10:29:32
+【正常】：模块名称：BackBoundDetailView-SaveBackboundDetail，执行语句：Update T_OutboundRecord Set NumofPlan = NumofPlan - 1 , NumofReal = NumofReal - 1 Where DetailID = '20170828150128128020000' and LotNo = '15002' and SizeNo = 'L42' and ShelfNo = '18A01' and DealStatus <> 'BackBound' ，执行时间：2018-01-03 10:29:33
+【正常】：模块名称：BackBoundDetailView-SaveBackboundDetail，执行语句：Update T_OutboundDetail Set NumofPlan = NumofPlan - 1 , NumofReal = NumofReal - 1 Where DetailID = '20170828150128128020000' and LotNo = '15002' and SizeNo = 'L42' ，执行时间：2018-01-03 10:29:33
+【正常】：模块名称：BackBoundDetailView-SaveBackboundDetail，执行语句：Insert Into T_Inventory (InventoryID,LotNo, SizeNo, ShelfNo, Quantity )VALUES ('b71d00da69d644a583f1f04803a8e1c4','15002','L42','18A01','1')，执行时间：2018-01-03 10:29:33
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2018-01-03 10:33:20
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20170922151355135502'，执行时间：2018-01-03 13:52:16
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='20170922151355135502' and ShelfNo = '77S77'，执行时间：2018-01-03 13:52:16
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20170922151355135502' ，执行时间：2018-01-03 13:52:16
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='20170922151355135502' and Status = '0' ，执行时间：2018-01-03 13:52:26
+【正常】：模块名称：MissionAssign-OutboundComplete-Actual，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20170922151355135502'，执行时间：2018-01-03 13:52:38
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2018-01-03 13:52:53

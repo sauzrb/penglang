@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes"?>
+<penglang sn="2017-03-01 15:00:00" >
+    <table name="Inventroty" > 
+         <gridband>	
+	<band field="BoundID" caption = "编号"  iskey ="1" visible = "0" width = "0" />
+	<band field="StyleNo" caption = "Style#"  visible = "1" width = "80" />
+	<band field="ShellNo" caption = "Lot#"  visible = "1" width = "80" />
+	<band field="LotNo" caption = "Art#"  visible = "1" width = "80" />
+	<band field="Color" caption = "Color"  visible = "1" width = "80" />
+	<band field="Regular" caption = "Regular"  visible = "1"  />
+		<band field="R36" caption = "36"  visible = "1"  width = "35" />
+		<band field="R38" caption = "38"  visible = "1"  width = "35" />
+		<band field="R40" caption = "40"  visible = "1"  width = "35" />
+		<band field="R42" caption = "42"  visible = "1"  width = "35" />
+		<band field="R44" caption = "44"  visible = "1"  width = "35" />
+		<band field="R46" caption = "46"  visible = "1"  width = "35" />
+		<band field="R48" caption = "48"  visible = "1"  width = "35" />
+		<band field="R50" caption = "50"  visible = "1"  width = "35" />
+		<band field="R52" caption = "52"  visible = "1"  width = "35" />
+		<band field="R54" caption = "54"  visible = "1"  width = "35" />
+		<band field="R56" caption = "56"  visible = "1"  width = "35" />
+		<band field="R58" caption = "58"  visible = "1"  width = "35" />
+		<band field="R60" caption = "60"  visible = "1"  width = "35" />
+		<band field="R62" caption = "62"  visible = "1"  width = "35" />
+	</band>
+	<band field="Long" caption = "Regular"  visible = "1" >
+		<band field="L38" caption = "38"  visible = "1"  width = "35" />
+		<band field="L40" caption = "40"  visible = "1"  width = "35" />
+		<band field="L42" caption = "42"  visible = "1"  width = "35" />
+		<band field="L44" caption = "44"  visible = "1"  width = "35" />
+		<band field="L46" caption = "46"  visible = "1"  width = "35" />
+		<band field="L48" caption = "48"  visible = "1"  width = "35" />
+		<band field="L50" caption = "50"  visible = "1"  width = "35" />
+		<band field="L52" caption = "52"  visible = "1"  width = "35" />
+		<band field="L54" caption = "54"  visible = "1"  width = "35" />
+		<band field="L56" caption = "56"  visible = "1"  width = "35" />
+		<band field="L58" caption = "58"  visible = "1"  width = "35" />
+		<band field="L60" caption = "60"  visible = "1"  width = "35" />
+		<band field="L62" caption = "62"  visible = "1"  width = "35" />
+	</band>
+	<band field="Short" caption = "Regular"  visible = "1" >
+		<band field="S34" caption = "34"  visible = "1"  width = "35" />
+		<band field="S36" caption = "36"  visible = "1"  width = "35" />
+		<band field="S38" caption = "38"  visible = "1"  width = "35" />
+		<band field="S40" caption = "40"  visible = "1"  width = "35" />
+		<band field="S42" caption = "42"  visible = "1"  width = "35" />
+		<band field="S44" caption = "44"  visible = "1"  width = "35" />
+		<band field="S46" caption = "46"  visible = "1"  width = "35" />
+	</band>
+	<band field="SubTotal" caption = "Sub Total"  visible = "1" width = "50" />
+	<band field="UnitPrice" caption = "Price"  visible = "1" width = "50" />
+       </gridBand>
+       <gridcolumn>
+	<column name="BoundID" caption = "编号"  width = "0" />
+	<column name="StyleNo" caption = "Style#"  width = "80"/>
+	<column name="ShellNo" caption = "Lot#"  />
+	<column name="LotNo"  caption = "Art#"  />
+	<column name="Color"  caption = "Color"  />
+	<column name="R36" caption = "36" />
+	<column name="R38" caption = "38" />
+	<column name="R40" caption = "40" />
+	<column name="R42" caption = "42" />
+	<column name="R44" caption = "44"  />
+	<column name="R46" caption = "46"  />
+	<column name="R48" caption = "48" />
+	<column name="R50" caption = "50" />
+	<column name="R52" caption = "52" />
+	<column name="R54" caption = "54" />
+	<column name="R56" caption = "56" />
+	<column name="R58" caption = "58" />
+	<column name="R60" caption = "60" />
+	<column name="R62" caption = "62" />
+	<column name="L38" caption = "38" />
+	<column name="L40" caption = "40" />
+	<column name="L42" caption = "42"  />
+	<column name="L44" caption = "44"  />
+	<column name="L46" caption = "46"  />
+	<column name="L48" caption = "48"  />
+	<column name="L50" caption = "50"  />
+	<column name="L52" caption = "52"  />
+	<column name="L54" caption = "54"  />
+	<column name="L56" caption = "56"  />
+	<column name="L58" caption = "58"  />
+	<column name="L60" caption = "60"  />
+	<column name="L62" caption = "62"  />
+	<column name="S34" caption = "34" />
+	<column name="S36" caption = "36"  />
+	<column name="S38" caption = "38"  />
+	<column name="S40" caption = "40"  />
+	<column name="S42" caption = "42"  />
+	<column name="S44" caption = "44"  />
+	<column name="S46" caption = "46"  />
+       </gridcolumn>
+  </table>
+</penglang>

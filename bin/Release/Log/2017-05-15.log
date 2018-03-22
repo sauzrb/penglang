@@ -1,0 +1,4 @@
+【正常】：模块名称：ClothesGridView-AddClothes，执行语句：Insert into T_Clothes (ClothesID, LotNo, styleNo, color, shell,ShellNo,Price ) Values('dcb87aca5ee44eceb1cbfa0b51a8b92d','A','J4034','A','','A',0)，执行时间：2017-05-15 21:07:20
+【正常】：模块名称：ClothesGridView-UpdateStyleRemark，执行语句：update t_clothes  set styleremark = 'Wool Blazer' where styleno = 'J4034'，执行时间：2017-05-15 21:07:20
+【正常】：模块名称：ClothesGridView-RemoveClothes，执行语句：delete from T_Clothes where LotNo = 'A'，执行时间：2017-05-15 21:07:32
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017-05-15 21:07:35

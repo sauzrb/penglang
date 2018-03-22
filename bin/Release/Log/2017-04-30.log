@@ -1,0 +1,35 @@
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/4/30 10:43:31
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/4/30 16:58:30
+【正常】：模块名称：Customer-InsertCustomer，执行语句： Insert into T_Customer (id, sales,customerno, company, address, tel, fax, email, shipto, shippingway, term, freight ) values('b0c2b4ffca3a439bae287128a05860f0', 'Alan', 'JF066', 'Looks Manhattan', '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', '', '', '', 'Same', 'Regular box', '60','100') ，执行时间：2017/4/30 17:00:05
+【正常】：模块名称：FrmOutbound-UpdateOutbound，执行语句：Update T_Outbound Set Operator='' ,Sales = 'Alan',ShipDate= '2017-03-02', Address = '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', ShipTo = 'Same', SellTo = 'Looks Manhattan', Shippingway = 'Regular box',Term = '60' , Freight = '100',  TrackingNo = '', ShipBy = '',OrderNo = 'P1703002.62930', CustomerNo = 'JF066' where OutboundID = '2017030214095995902'，执行时间：2017/4/30 17:00:05
+【正常】：模块名称：Customer-InsertCustomer，执行语句： Insert into T_Customer (id, sales,customerno, company, address, tel, fax, email, shipto, shippingway, term, freight ) values('0e37fed0ae4447e1933f5dca4814a0b0', 'Alan', 'JF066', 'Looks Manhattan', '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', '', '', '', 'Same', 'Regular box', '60','30') ，执行时间：2017/4/30 17:02:39
+【正常】：模块名称：FrmOutbound-UpdateOutbound，执行语句：Update T_Outbound Set Operator='' ,Sales = 'Alan',ShipDate= '2017-03-02', Address = '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', ShipTo = 'Same', SellTo = 'Looks Manhattan', Shippingway = 'Regular box',Term = '60' , Freight = '30',  TrackingNo = '', ShipBy = '',OrderNo = 'P1703002.62930', CustomerNo = 'JF066' where OutboundID = '2017030214095995902'，执行时间：2017/4/30 17:02:39
+【正常】：模块名称：Customer-InsertCustomer，执行语句： Insert into T_Customer (id, sales,customerno, company, address, tel, fax, email, shipto, shippingway, term, freight ) values('ecbc2bc0453c4eafb3d63fcb7229b229', 'Alan', 'JF066', 'Looks Manhattan', '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', '', '', '', 'Same', 'Regular box', '60','40') ，执行时间：2017/4/30 17:03:54
+【正常】：模块名称：FrmOutbound-UpdateOutbound，执行语句：Update T_Outbound Set Operator='' ,Sales = 'Alan',ShipDate= '2017-03-02', Address = '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', ShipTo = 'Same', SellTo = 'Looks Manhattan', Shippingway = 'Regular box',Term = '60' , Freight = '40',  TrackingNo = '', ShipBy = '',OrderNo = 'P1703002.62930', CustomerNo = 'JF066' where OutboundID = '2017030214095995902'，执行时间：2017/4/30 17:04:01
+【正常】：模块名称：Customer-InsertCustomer，执行语句： Insert into T_Customer (id, sales,customerno, company, address, tel, fax, email, shipto, shippingway, term, freight ) values('28c59c2ef4114f918ebf62983693f70b', 'Alan', 'JF066', 'Looks Manhattan', '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', '', '', '', 'Same', 'Regular box', '60','50') ，执行时间：2017/4/30 17:04:49
+【正常】：模块名称：FrmOutbound-UpdateOutbound，执行语句：Update T_Outbound Set Operator='' ,Sales = 'Alan',ShipDate= '2017-03-02', Address = '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', ShipTo = 'Same', SellTo = 'Looks Manhattan', Shippingway = 'Regular box',Term = '60' , Freight = '50',  TrackingNo = '', ShipBy = '',OrderNo = 'P1703002.62930', CustomerNo = 'JF066' where OutboundID = '2017030214095995902'，执行时间：2017/4/30 17:04:52
+【正常】：模块名称：Customer-InsertCustomer，执行语句： Insert into T_Customer (id, sales,customerno, company, address, tel, fax, email, shipto, shippingway, term, freight ) values('6c549f5eaefc4dd28a6a0fbbbe78e35e', 'Alan', 'JF066', 'Looks Manhattan', '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', '', '', '', 'Same', 'Regular box', '60','30') ，执行时间：2017/4/30 17:05:07
+【正常】：模块名称：FrmOutbound-UpdateOutbound，执行语句：Update T_Outbound Set Operator='' ,Sales = 'Alan',ShipDate= '2017-03-02', Address = '515 W Oglethorpe Hwy, 
+Hinesville, GA 31313
+(912) 877-5085', ShipTo = 'Same', SellTo = 'Looks Manhattan', Shippingway = 'Regular box',Term = '60' , Freight = '30',  TrackingNo = '', ShipBy = '',OrderNo = 'P1703002.62930', CustomerNo = 'JF066' where OutboundID = '2017030214095995902'，执行时间：2017/4/30 17:05:20
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/4/30 17:14:51
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/4/30 17:23:14
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/4/30 17:28:12

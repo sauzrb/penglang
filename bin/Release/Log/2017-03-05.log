@@ -1,0 +1,3 @@
+【正常】：模块名称：，执行语句：update t_systemCode set userdefine2 = userdefine2+1 , userdefine3 = '2017-03-05' where codeid = '0' and codetype = 'AppVersion'，执行时间：2017/3/5 19:01:55
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/3/5 19:01:58
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/3/5 19:17:06

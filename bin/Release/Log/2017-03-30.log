@@ -1,0 +1,38 @@
+【正常】：模块名称：，执行语句：update t_systemCode set userdefine2 = userdefine2+1 , userdefine3 = '2017-03-30' where codeid = '0' and codetype = 'AppVersion'，执行时间：2017-03-30 9:56:07
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017-03-30 9:56:10
+【正常】：模块名称：InboundDetailView-SaveInboundCell，执行语句：Insert into T_InboundDetail (DetailID, InboundID, LotNo, SizeNo, NumOfPlan, NumOfReal , Status ) Values('20170330134003403010000','20170330133948394801','172','R36',2,2,'')，执行时间：2017-03-30 13:40:03
+【正常】：模块名称：InboundDetailView-SaveInboundCell，执行语句：Insert into T_InboundDetail (DetailID, InboundID, LotNo, SizeNo, NumOfPlan, NumOfReal , Status ) Values('20170330134003403010000','20170330133948394801','172','R38',2,2,'')，执行时间：2017-03-30 13:40:03
+【正常】：模块名称：FrmInbound-InsertInbound，执行语句：Insert into T_Inbound (InboundID, ProductNo,OrderDate, CreateTime, Operator, Status, UserDefine1 ) Values('20170330133948394801','000-001','2017-03-30','2017-03-30 13:40:03','','0','VirtualInbound')，执行时间：2017-03-30 13:40:03
+【正常】：模块名称：，执行语句：Update T_Inbound Set UserDefine1='VirtualInbound' WHERE InboundID='20170330133948394801'，执行时间：2017-03-30 13:40:03
+【正常】：模块名称：MissionAssign-VirtualInboundAssign，执行语句：INSERT INTO T_Inventory (InventoryID,shelfNo,LotNo,SizeNo,UserDefine1,Quantity)  VALUES('1bcc3d5c246e49419fee59945ed1de28','88T88','172','R36','20170330133948394801',2)，执行时间：2017-03-30 13:40:03
+【正常】：模块名称：MissionAssign-VirtualInboundAssign，执行语句：INSERT INTO T_Inventory (InventoryID,shelfNo,LotNo,SizeNo,UserDefine1,Quantity)  VALUES('54e39dfe25284d7495e65c1f2e87d139','88T88','172','R38','20170330133948394801',2)，执行时间：2017-03-30 13:40:03
+【正常】：模块名称：FrmInbound-UpdateOperator，执行语句：Update T_InboundRecord Set DealUser = '' where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:03
+【正常】：模块名称：FrmInbound-UpdateOperator，执行语句：Update T_Inbound Set Operator = '' where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:03
+【正常】：模块名称：FrmInbound-ClearRecord，执行语句：delete from T_InboundDetail where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：InboundDetailView-SaveInboundCell，执行语句：Insert into T_InboundDetail (DetailID, InboundID, LotNo, SizeNo, NumOfPlan, NumOfReal , Status ) Values('201703301340144014010000','20170330133948394801','172','R36',2,2,'')，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：InboundDetailView-SaveInboundCell，执行语句：Insert into T_InboundDetail (DetailID, InboundID, LotNo, SizeNo, NumOfPlan, NumOfReal , Status ) Values('201703301340144014010000','20170330133948394801','172','R38',1,1,'')，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：，执行语句：Update T_Inbound Set UserDefine1='ActualInbound' WHERE InboundID='20170330133948394801' and UserDefine1 = 'VirtualInbound' ，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：MissionAssign-InboundAssign，执行语句：UPDATE T_Shelf SET userdefine2 = '0' ，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：MissionAssign-InboundAssign，执行语句：UPDATE T_Shelf A SET A.userdefine2 = '1' WHERE  A.ShelfNo<>'99T99' AND  EXISTS (SELECT 1 FROM V_BlankShelf B  WHERE  A.ShelfNo = B.ShelfNo)，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：MissionAssign-InboundAssign，执行语句：UPDATE T_Shelf A SET A.userdefine2 = '0' WHERE   EXISTS (SELECT 1 FROM T_InboundRecord B  WHERE  A.ShelfNo = B.ShelfNo AND B.DealStatus <>'complete')，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：MissionAssign-InboundAssignSingle，执行语句：INSERT INTO T_InboundRecord (RecordId,InboundID,DetailID,shelfNo,NumofPlan,NumofReal,LotNo,SizeNo,PlanDateTime)  VALUES('7104ca32a18d4407bb465603126abb1b','20170330133948394801','201703301340144014010000','01C10',2,2,'172','R36','2017-03-30 13:40:14')，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：MissionAssign-InboundAssignSingle，执行语句：INSERT INTO T_InboundRecord (RecordId,InboundID,DetailID,shelfNo,NumofPlan,NumofReal,LotNo,SizeNo,PlanDateTime)  VALUES('ae54af52c55d46f998108154e65c621f','20170330133948394801','201703301340144014010000','01C10',1,1,'172','R38','2017-03-30 13:40:14')，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：FrmInbound-UpdateOperator，执行语句：Update T_InboundRecord Set DealUser = '' where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：FrmInbound-UpdateOperator，执行语句：Update T_Inbound Set Operator = '' where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:14
+【正常】：模块名称：FrmInbound-ClearRecord，执行语句：Delete from T_InboundRecord where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:19
+【正常】：模块名称：FrmInbound-ClearRecord，执行语句：delete from T_InboundDetail where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：InboundDetailView-SaveInboundCell，执行语句：Insert into T_InboundDetail (DetailID, InboundID, LotNo, SizeNo, NumOfPlan, NumOfReal , Status ) Values('201703301340264026010000','20170330133948394801','172','R36',2,2,'')，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：InboundDetailView-SaveInboundCell，执行语句：Insert into T_InboundDetail (DetailID, InboundID, LotNo, SizeNo, NumOfPlan, NumOfReal , Status ) Values('201703301340264026010000','20170330133948394801','172','R38',1,1,'')，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：，执行语句：Update T_Inbound Set UserDefine1='ActualInbound' WHERE InboundID='20170330133948394801' and UserDefine1 = 'VirtualInbound' ，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：MissionAssign-InboundAssign，执行语句：UPDATE T_Shelf SET userdefine2 = '0' ，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：MissionAssign-InboundAssign，执行语句：UPDATE T_Shelf A SET A.userdefine2 = '1' WHERE  A.ShelfNo<>'99T99' AND  EXISTS (SELECT 1 FROM V_BlankShelf B  WHERE  A.ShelfNo = B.ShelfNo)，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：MissionAssign-InboundAssign，执行语句：UPDATE T_Shelf A SET A.userdefine2 = '0' WHERE   EXISTS (SELECT 1 FROM T_InboundRecord B  WHERE  A.ShelfNo = B.ShelfNo AND B.DealStatus <>'complete')，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：MissionAssign-InboundAssignSingle，执行语句：INSERT INTO T_InboundRecord (RecordId,InboundID,DetailID,shelfNo,NumofPlan,NumofReal,LotNo,SizeNo,PlanDateTime)  VALUES('86026b7a11fb4184bd881c71fe004894','20170330133948394801','201703301340264026010000','01C10',2,2,'172','R36','2017-03-30 13:40:26')，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：MissionAssign-InboundAssignSingle，执行语句：INSERT INTO T_InboundRecord (RecordId,InboundID,DetailID,shelfNo,NumofPlan,NumofReal,LotNo,SizeNo,PlanDateTime)  VALUES('177bd1739d4f4bf0adbda6f4e5141a10','20170330133948394801','201703301340264026010000','01C10',1,1,'172','R38','2017-03-30 13:40:26')，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：FrmInbound-UpdateOperator，执行语句：Update T_InboundRecord Set DealUser = '' where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：FrmInbound-UpdateOperator，执行语句：Update T_Inbound Set Operator = '' where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:26
+【正常】：模块名称：FrmInbound-ClearRecord，执行语句：Delete from T_InboundRecord where InboundID = '20170330133948394801'，执行时间：2017-03-30 13:40:47
+【正常】：模块名称：，执行语句：Update T_InboundDetail Set NumOfPlan = '2' , NumOfReal = '2' where InboundID = '20170330133948394801' and LotNo = '172' and SizeNo = 'R36' ，执行时间：2017-03-30 13:40:47
+【正常】：模块名称：，执行语句：Update T_InboundDetail Set NumOfPlan = '2' , NumOfReal = '2' where InboundID = '20170330133948394801' and LotNo = '172' and SizeNo = 'R38' ，执行时间：2017-03-30 13:40:47
+【正常】：模块名称：，执行语句：Update T_Inbound Set UserDefine1 = 'VirtualInbound' where InboundID = '20170330133948394801' and UserDefine1 = 'ActualInbound'，执行时间：2017-03-30 13:40:47
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017-03-30 13:40:50

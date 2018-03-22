@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50D6BCF4-0BD0-4A75-8C8E-0B0B39784279}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PengLang</RootNamespace>
+    <AssemblyName>PengLang3</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>penglang.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 13.2\Components\Bin\Framework\DevExpress.BonusSkins.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\NOPI 1.2.5\bin\.net 4.0\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Sau.Util, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Sau.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseGridView.cs" />
+    <Compile Include="Base\ColumnTag.cs" />
+    <Compile Include="Base\ExportToExcel.cs" />
+    <Compile Include="Base\InventoryView.cs" />
+    <Compile Include="Bound\BackBoundDetailView.cs" />
+    <Compile Include="Bound\BoundDetailView.cs" />
+    <Compile Include="Bound\DealStatus.cs" />
+    <Compile Include="Bound\ExportOutboundPacking.cs" />
+    <Compile Include="Bound\FrmSelectOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bound\FrmSelectOperator.Designer.cs">
+      <DependentUpon>FrmSelectOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brower\ExportOutboundUnpaid.cs" />
+    <Compile Include="Brower\UnpaidOutboundView.cs" />
+    <Compile Include="Finance\CommissionBrowerView.cs" />
+    <Compile Include="Brower\ExportSaleStatisticsiew.cs" />
+    <Compile Include="Brower\ExportInventoryBrowerView.cs" />
+    <Compile Include="Finance\ExprotCommissionBrower.cs" />
+    <Compile Include="Finance\FrmAccountCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\FrmAccountCash.designer.cs">
+      <DependentUpon>FrmAccountCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\FrmCommission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\FrmCommission.Designer.cs">
+      <DependentUpon>FrmCommission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brower\InventoryBrowerView.cs" />
+    <Compile Include="Brower\OutboundBrowerDetailView.cs" />
+    <Compile Include="Brower\OutboudBrowerView.cs" />
+    <Compile Include="Bound\MissionAssign.cs" />
+    <Compile Include="Bound\ShelfInventoryView.cs" />
+    <Compile Include="Bound\TranboundEditView.cs" />
+    <Compile Include="Bound\FrmEditOutbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bound\FrmEditOutbound.Designer.cs">
+      <DependentUpon>FrmEditOutbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bound\FrmEditInbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bound\FrmEditInbound.Designer.cs">
+      <DependentUpon>FrmEditInbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brower\FrmOuboundBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brower\FrmOuboundBrowser.Designer.cs">
+      <DependentUpon>FrmOuboundBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bound\FrmSetShelfSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bound\FrmSetShelfSize.Designer.cs">
+      <DependentUpon>FrmSetShelfSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brower\FrmInventoryBrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brower\FrmInventoryBrower.Designer.cs">
+      <DependentUpon>FrmInventoryBrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brower\FrmSaleBrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brower\FrmSaleBrower.Designer.cs">
+      <DependentUpon>FrmSaleBrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brower\SaleStatisticsView.cs" />
+    <Compile Include="Brower\CashRecordView.cs" />
+    <Compile Include="Brower\FrmCashBrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brower\FrmCashBrower.Designer.cs">
+      <DependentUpon>FrmCashBrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\FrmCashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\FrmCashWindow.Designer.cs">
+      <DependentUpon>FrmCashWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\FrmRcvdEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\FrmRcvdEdit.Designer.cs">
+      <DependentUpon>FrmRcvdEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\SalesCashView.cs" />
+    <Compile Include="Brower\FrmUnpaidStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brower\FrmUnpaidStatistics.Designer.cs">
+      <DependentUpon>FrmUnpaidStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\TestDebug.cs" />
+    <Compile Include="Other\FrmUserMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmUserMag.Designer.cs">
+      <DependentUpon>FrmUserMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\FrmClothesStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmClothesStyle.Designer.cs">
+      <DependentUpon>FrmClothesStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bound\FrmWoPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bound\FrmWoPrice.Designer.cs">
+      <DependentUpon>FrmWoPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ExportGridView.cs" />
+    <Compile Include="Finance\FrmFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\FrmFinance.Designer.cs">
+      <DependentUpon>FrmFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brower\CashBrowerView.cs" />
+    <Compile Include="Brower\ExportOutboundCash.cs" />
+    <Compile Include="Finance\FrmSalesCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\FrmSalesCash.Designer.cs">
+      <DependentUpon>FrmSalesCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\FrmCustomerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmCustomerEdit.Designer.cs">
+      <DependentUpon>FrmCustomerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\CustomerView.cs" />
+    <Compile Include="Other\FrmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmCustomer.Designer.cs">
+      <DependentUpon>FrmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\ExportInvoice.cs" />
+    <Compile Include="Bound\ExprotOutboundInvoice.cs" />
+    <Compile Include="Other\User.cs" />
+    <Compile Include="Other\UserGridView.cs" />
+    <Compile Include="Return\ExportBackbound.cs" />
+    <Compile Include="Return\FrmBackbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return\FrmBackbound.Designer.cs">
+      <DependentUpon>FrmBackbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\Customer.cs" />
+    <Compile Include="Brower\FrmBrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brower\FrmBrower.Designer.cs">
+      <DependentUpon>FrmBrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\FrmEditInventroy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmEditInventroy.Designer.cs">
+      <DependentUpon>FrmEditInventroy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\FrmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\FrmInvoice.Designer.cs">
+      <DependentUpon>FrmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bound\InboundDetailView.cs" />
+    <Compile Include="Bound\InboundMasterView.cs" />
+    <Compile Include="Bound\InboundRecordView.cs" />
+    <Compile Include="Bound\OutboundDetailView.cs" />
+    <Compile Include="Bound\OutboundMasterView.cs" />
+    <Compile Include="Bound\OutboundRecordView.cs" />
+    <Compile Include="Other\Clothes.cs" />
+    <Compile Include="Bound\OutboundInvoiceView.cs" />
+    <Compile Include="Finance\InvoiceItem.cs" />
+    <Compile Include="Finance\InvoiceSelectionView.cs" />
+    <Compile Include="Finance\InvoiceEditView.cs" />
+    <Compile Include="Other\ClothesGridView.cs" />
+    <Compile Include="Other\Company.cs" />
+    <Compile Include="Other\FrmClothes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmClothes.Designer.cs">
+      <DependentUpon>FrmClothes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\InventoryDetailView.cs" />
+    <Compile Include="Base\InventoryItem.cs" />
+    <Compile Include="Base\BaseBandView.cs" />
+    <Compile Include="Inventory\InventoryMasterView.cs" />
+    <Compile Include="Bound\TranboundDetailView.cs" />
+    <Compile Include="Bound\TranboundMasterView.cs" />
+    <Compile Include="Other\FrmLockScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmLockScreen.Designer.cs">
+      <DependentUpon>FrmLockScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\FrmPasswordEdit.cs" />
+    <Compile Include="Other\FrmShelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmShelf.Designer.cs">
+      <DependentUpon>FrmShelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\FrmSystemCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmSystemCode.Designer.cs">
+      <DependentUpon>FrmSystemCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\EditInventoryView.cs" />
+    <Compile Include="Other\ShelfGridView.cs" />
+    <Compile Include="Return\FrmEditBackbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return\FrmEditBackbound.Designer.cs">
+      <DependentUpon>FrmEditBackbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Return\ReturnRecordView.cs" />
+    <Compile Include="Return\ReturnDetailView.cs" />
+    <Compile Include="Return\ReturnMasterView.cs" />
+    <Compile Include="Utils\AppConfig.cs" />
+    <Compile Include="Utils\AppLicense.cs" />
+    <Compile Include="Utils\AccessDB.cs" />
+    <Compile Include="Bound\FrmInbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bound\FrmInbound.Designer.cs">
+      <DependentUpon>FrmInbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\FrmInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\FrmInventory.Designer.cs">
+      <DependentUpon>FrmInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\FrmManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\FrmManage.Designer.cs">
+      <DependentUpon>FrmManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bound\FrmOutbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bound\FrmOutbound.Designer.cs">
+      <DependentUpon>FrmOutbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bound\FrmTranbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bound\FrmTranbound.Designer.cs">
+      <DependentUpon>FrmTranbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\InnerForm.cs" />
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\AppUpdater.cs" />
+    <Compile Include="Utils\FileStauts.cs" />
+    <Compile Include="Utils\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrmAbout.designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrmLoading.designer.cs">
+      <DependentUpon>FrmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrmReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrmReplace.designer.cs">
+      <DependentUpon>FrmReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrmTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrmTip.designer.cs">
+      <DependentUpon>FrmTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\MemoryTable.cs" />
+    <Compile Include="Utils\CheckButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\CheckButton.Designer.cs">
+      <DependentUpon>CheckButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\MySqlDBPL.cs" />
+    <Compile Include="Utils\ZipFile.cs" />
+    <EmbeddedResource Include="Bound\FrmEditInbound.resx">
+      <DependentUpon>FrmEditInbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bound\FrmInbound.resx">
+      <DependentUpon>FrmInbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bound\FrmSelectOperator.resx">
+      <DependentUpon>FrmSelectOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bound\FrmEditOutbound.resx">
+      <DependentUpon>FrmEditOutbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\FrmAccountCash.resx">
+      <DependentUpon>FrmAccountCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\FrmCommission.resx">
+      <DependentUpon>FrmCommission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brower\FrmInventoryBrower.resx">
+      <DependentUpon>FrmInventoryBrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brower\FrmOuboundBrowser.resx">
+      <DependentUpon>FrmOuboundBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brower\FrmBrower.resx">
+      <DependentUpon>FrmBrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bound\FrmSetShelfSize.resx">
+      <DependentUpon>FrmSetShelfSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brower\FrmSaleBrower.resx">
+      <DependentUpon>FrmSaleBrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brower\FrmCashBrower.resx">
+      <DependentUpon>FrmCashBrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\FrmCashWindow.resx">
+      <DependentUpon>FrmCashWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bound\FrmWoPrice.resx">
+      <DependentUpon>FrmWoPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\FrmFinance.resx">
+      <DependentUpon>FrmFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\FrmRcvdEdit.resx">
+      <DependentUpon>FrmRcvdEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\FrmSalesCash.resx">
+      <DependentUpon>FrmSalesCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brower\FrmUnpaidStatistics.resx">
+      <DependentUpon>FrmUnpaidStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmClothesStyle.resx">
+      <DependentUpon>FrmClothesStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmCustomerEdit.resx">
+      <DependentUpon>FrmCustomerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmCustomer.resx">
+      <DependentUpon>FrmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmUserMag.resx">
+      <DependentUpon>FrmUserMag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Return\FrmBackBound.resx">
+      <DependentUpon>FrmBackbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmEditInventroy.resx">
+      <DependentUpon>FrmEditInventroy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\FrmInvoice.resx">
+      <DependentUpon>FrmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmClothes.resx">
+      <DependentUpon>FrmClothes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\FrmInventory.resx">
+      <DependentUpon>FrmInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmLockScreen.resx">
+      <DependentUpon>FrmLockScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmManage.resx">
+      <DependentUpon>FrmManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bound\FrmOutbound.resx">
+      <DependentUpon>FrmOutbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bound\FrmTranbound.resx">
+      <DependentUpon>FrmTranbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmShelf.resx">
+      <DependentUpon>FrmShelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\FrmSystemCode.resx">
+      <DependentUpon>FrmSystemCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Return\FrmEditBackbound.resx">
+      <DependentUpon>FrmEditBackbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrmLoading.resx">
+      <DependentUpon>FrmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrmReplace.resx">
+      <DependentUpon>FrmReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrmTip.resx">
+      <DependentUpon>FrmTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\CheckButton.resx">
+      <DependentUpon>CheckButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="penglang.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,6 @@
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/2/27 18:31:11
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/2/27 18:31:29
+【正常】：模块名称：FrmOutbound-UpdateInvoiceStatus，执行语句：update T_Outbound Set InvoiceStatus = '1' where OutboundID = '2017022412390539502'，执行时间：2017/2/27 18:37:56
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/2/27 18:40:02
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/2/27 18:59:04
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017/2/27 19:00:59

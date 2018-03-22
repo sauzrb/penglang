@@ -1,0 +1,126 @@
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229115541554102'，执行时间：2017-12-29 12:31:37
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='20171229115541554102' and ShelfNo = '77S77'，执行时间：2017-12-29 12:31:37
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229115541554102' ，执行时间：2017-12-29 12:31:37
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='20171229115541554102' and Status = '0' ，执行时间：2017-12-29 12:31:42
+【正常】：模块名称：MissionAssign-OutboundComplete-Actual，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229115541554102'，执行时间：2017-12-29 12:32:07
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229115449544902'，执行时间：2017-12-29 12:32:26
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='20171229115449544902' and ShelfNo = '77S77'，执行时间：2017-12-29 12:32:26
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229115449544902' ，执行时间：2017-12-29 12:32:26
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='20171229115449544902' and Status = '0' ，执行时间：2017-12-29 12:32:30
+【正常】：模块名称：MissionAssign-OutboundComplete-Actual，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229115449544902'，执行时间：2017-12-29 12:34:47
+【正常】：模块名称：FrmOutbound-CancelNewOutbound，执行语句：delete from T_OutboundDetail where OutboundID = '20171229123624362402'，执行时间：2017-12-29 12:37:43
+【正常】：模块名称：FrmOutbound-CancelNewOutbound，执行语句：delete from T_OutboundRecord where OutboundID = '20171229123624362402'，执行时间：2017-12-29 12:37:43
+【正常】：模块名称：FrmOutbound-CancelNewOutbound，执行语句：delete from T_Outbound where OutboundID = '20171229123624362402'，执行时间：2017-12-29 12:37:43
+【正常】：模块名称：FrmOutbound-RestoreInventory，执行语句：update T_Inventory Set Quantity = Quantity + 2 where lotno = '15004'  and sizeno = 'S44' and shelfno = '11C10' ，执行时间：2017-12-29 12:58:32
+【正常】：模块名称：FrmOutbound-DeleteOutboundRecord，执行语句：delete from t_outboundrecord where recordId = '5cb20b0413984dea82bc6cd4da4e1a04'，执行时间：2017-12-29 12:58:32
+【正常】：模块名称：FrmOutbound-RestoreInventory，执行语句：update T_Inventory Set Quantity = Quantity + 2 where lotno = '15004'  and sizeno = 'R44' and shelfno = '10C10' ，执行时间：2017-12-29 12:58:32
+【正常】：模块名称：FrmOutbound-DeleteOutboundRecord，执行语句：delete from t_outboundrecord where recordId = 'd084b23df15b4e8d977c2a28db43c6be'，执行时间：2017-12-29 12:58:32
+【正常】：模块名称：FrmOutbound-ClearDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229115449544902'，执行时间：2017-12-29 12:58:32
+【正常】：模块名称：FrmOutbound-DeleteOutboundItem，执行语句：delete from T_Outbound where OutboundID = '20171229115449544902'，执行时间：2017-12-29 12:58:32
+【正常】：模块名称：FrmOutbound-RestoreInventory，执行语句：update T_Inventory Set Quantity = Quantity + 2 where lotno = '15004'  and sizeno = 'S44' and shelfno = '11C10' ，执行时间：2017-12-29 12:58:46
+【正常】：模块名称：FrmOutbound-DeleteOutboundRecord，执行语句：delete from t_outboundrecord where recordId = '19396793d42a45b0b6b1a40ba0a83870'，执行时间：2017-12-29 12:58:46
+【正常】：模块名称：FrmOutbound-RestoreInventory，执行语句：update T_Inventory Set Quantity = Quantity + 2 where lotno = '15004'  and sizeno = 'R44' and shelfno = '10C10' ，执行时间：2017-12-29 12:58:46
+【正常】：模块名称：FrmOutbound-DeleteOutboundRecord，执行语句：delete from t_outboundrecord where recordId = 'bf90609e9a4f40af927a3c2a69595805'，执行时间：2017-12-29 12:58:46
+【正常】：模块名称：FrmOutbound-ClearDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229115541554102'，执行时间：2017-12-29 12:58:46
+【正常】：模块名称：FrmOutbound-DeleteOutboundItem，执行语句：delete from T_Outbound where OutboundID = '20171229115541554102'，执行时间：2017-12-29 12:58:46
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122912590259202'，执行时间：2017-12-29 12:59:24
+【正常】：模块名称：FrmOutbound-InsertOutbound，执行语句：Insert into T_Outbound (OutboundID, CreateTime, Operator ,OrderNo, ShipDate,  Sales, Commission, CustomerNo, SellTo, Address, TrackingNo, ShipBy, ShipTo, Shippingway, Term, Freight, InvoiceStatus, Status, OutboundKind,PaymentMode ) Values( '2017122912590259202','2017-12-29 12:59:24','','0000','','Alan','','JF007','JB s House of Fashion','1630 3rd Ave West
+Birmingham,AL 35208
+205-788-4491','','','Same','Regular box','60','10','1','0','0','FAC' )，执行时间：2017-12-29 12:59:24
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122912590259202' ，执行时间：2017-12-29 12:59:29
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229125951595102'，执行时间：2017-12-29 13:00:20
+【正常】：模块名称：FrmOutbound-InsertOutbound，执行语句：Insert into T_Outbound (OutboundID, CreateTime, Operator ,OrderNo, ShipDate,  Sales, Commission, CustomerNo, SellTo, Address, TrackingNo, ShipBy, ShipTo, Shippingway, Term, Freight, InvoiceStatus, Status, OutboundKind,PaymentMode ) Values( '20171229125951595102','2017-12-29 13:00:20','','0001','','Alan','','JF007','JB s House of Fashion','1630 3rd Ave West
+Birmingham,AL 35208
+205-788-4491','','','Same','Regular box','60','10','1','0','0','FAC' )，执行时间：2017-12-29 13:00:20
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229125951595102' ，执行时间：2017-12-29 13:00:22
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122913005405402'，执行时间：2017-12-29 13:01:17
+【正常】：模块名称：FrmOutbound-InsertOutbound，执行语句：Insert into T_Outbound (OutboundID, CreateTime, Operator ,OrderNo, ShipDate,  Sales, Commission, CustomerNo, SellTo, Address, TrackingNo, ShipBy, ShipTo, Shippingway, Term, Freight, InvoiceStatus, Status, OutboundKind,PaymentMode ) Values( '2017122913005405402','2017-12-29 13:01:17','','0002','','Alan','','JF007','JB s House of Fashion','1630 3rd Ave West
+Birmingham,AL 35208
+205-788-4491','','','Same','Regular box','60','20','1','0','0','FAC' )，执行时间：2017-12-29 13:01:17
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913005405402' ，执行时间：2017-12-29 13:01:18
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229125951595102'，执行时间：2017-12-29 13:01:45
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='20171229125951595102' and ShelfNo = '77S77'，执行时间：2017-12-29 13:01:46
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229125951595102' ，执行时间：2017-12-29 13:01:46
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='20171229125951595102' and Status = '0' ，执行时间：2017-12-29 13:01:48
+【正常】：模块名称：MissionAssign-OutboundComplete-Actual，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229125951595102'，执行时间：2017-12-29 13:01:53
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122913005405402'，执行时间：2017-12-29 13:02:20
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='2017122913005405402' and ShelfNo = '77S77'，执行时间：2017-12-29 13:02:20
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913005405402' ，执行时间：2017-12-29 13:02:20
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='2017122913005405402' and Status = '0' ，执行时间：2017-12-29 13:02:21
+【正常】：模块名称：MissionAssign-OutboundComplete-Actual，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913005405402'，执行时间：2017-12-29 13:02:24
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122912590259202'，执行时间：2017-12-29 13:03:13
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='2017122912590259202' and ShelfNo = '77S77'，执行时间：2017-12-29 13:03:13
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122912590259202' ，执行时间：2017-12-29 13:03:13
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='2017122912590259202' and Status = '0' ，执行时间：2017-12-29 13:03:15
+【正常】：模块名称：FrmOutbound-InsertInventory，执行语句：Insert into T_Inventory (InventoryID, ShelfNo, LotNo, SizeNo, Quantity ) Values('15fe7cadca864074b395d8230241e9dc', '未分配货架', '15004', 'R44', 1)，执行时间：2017-12-29 13:04:19
+【正常】：模块名称：FrmOutbound-DeleteOutboundRecord，执行语句：delete from t_outboundrecord where recordId = '591b2f5d3c33430d970a4a6d283046f5'，执行时间：2017-12-29 13:04:19
+【正常】：模块名称：FrmOutbound-RestoreInventory，执行语句：update T_Inventory Set Quantity = Quantity + 1 where lotno = '15004'  and sizeno = 'R44' and shelfno = '15A06' ，执行时间：2017-12-29 13:04:19
+【正常】：模块名称：FrmOutbound-DeleteOutboundRecord，执行语句：delete from t_outboundrecord where recordId = 'bc72aaf65d164f68939fafbc815fc9c2'，执行时间：2017-12-29 13:04:19
+【正常】：模块名称：FrmOutbound-RestoreInventory，执行语句：update T_Inventory Set Quantity = Quantity + -4 where lotno = '15004'  and sizeno = 'R44' and shelfno = '10C10' ，执行时间：2017-12-29 13:04:20
+【正常】：模块名称：FrmOutbound-DeleteOutboundRecord，执行语句：delete from t_outboundrecord where recordId = 'dea1661743d548f9a110f3b9efa603b6'，执行时间：2017-12-29 13:04:20
+【正常】：模块名称：FrmOutbound-ClearDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122913005405402'，执行时间：2017-12-29 13:04:20
+【正常】：模块名称：FrmOutbound-DeleteOutboundItem，执行语句：delete from T_Outbound where OutboundID = '2017122913005405402'，执行时间：2017-12-29 13:04:20
+【正常】：模块名称：FrmOutbound-RestoreInventory，执行语句：update T_Inventory Set Quantity = Quantity + 7 where lotno = '15004'  and sizeno = 'R44' and shelfno = '10C10' ，执行时间：2017-12-29 13:04:24
+【正常】：模块名称：FrmOutbound-DeleteOutboundRecord，执行语句：delete from t_outboundrecord where recordId = '1e911827b0ab4dd5b91f79c23e83c46a'，执行时间：2017-12-29 13:04:24
+【正常】：模块名称：FrmOutbound-ClearDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229125951595102'，执行时间：2017-12-29 13:04:24
+【正常】：模块名称：FrmOutbound-DeleteOutboundItem，执行语句：delete from T_Outbound where OutboundID = '20171229125951595102'，执行时间：2017-12-29 13:04:24
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017-12-29 13:09:49
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:13:32
+【正常】：模块名称：FrmOutbound-InsertOutbound，执行语句：Insert into T_Outbound (OutboundID, CreateTime, Operator ,OrderNo, ShipDate,  Sales, Commission, CustomerNo, SellTo, Address, TrackingNo, ShipBy, ShipTo, Shippingway, Term, Freight, InvoiceStatus, Status, OutboundKind,PaymentMode ) Values( '2017122913130913902','2017-12-29 13:13:32','','0000','','Alan','','JF005','Shiva Clothing','1605 S Eufaula Ave,
+Eufaula,AL 36027
+Phone：334-616-0608','','','UPS account: 6764A2','Regular box','60','12','1','0','0','FAC' )，执行时间：2017-12-29 13:13:32
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913130913902' ，执行时间：2017-12-29 13:13:36
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229131350135002'，执行时间：2017-12-29 13:14:25
+【正常】：模块名称：FrmOutbound-InsertOutbound，执行语句：Insert into T_Outbound (OutboundID, CreateTime, Operator ,OrderNo, ShipDate,  Sales, Commission, CustomerNo, SellTo, Address, TrackingNo, ShipBy, ShipTo, Shippingway, Term, Freight, InvoiceStatus, Status, OutboundKind,PaymentMode ) Values( '20171229131350135002','2017-12-29 13:14:26','','0001','','Alan','','JF008','Just In Fashions','2994 Springhill Ave,
+Mobile,AL 36607
+251-471-4261','','','Fedex 101868613','Regular box','60','23','1','0','0','FAC' )，执行时间：2017-12-29 13:14:26
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229131350135002' ，执行时间：2017-12-29 13:14:29
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229131431143102'，执行时间：2017-12-29 13:14:51
+【正常】：模块名称：FrmOutbound-InsertOutbound，执行语句：Insert into T_Outbound (OutboundID, CreateTime, Operator ,OrderNo, ShipDate,  Sales, Commission, CustomerNo, SellTo, Address, TrackingNo, ShipBy, ShipTo, Shippingway, Term, Freight, InvoiceStatus, Status, OutboundKind,PaymentMode ) Values( '20171229131431143102','2017-12-29 13:14:51','','0002','','Alan','','JF012','Super Bad Men''s Clothing','4312 Rivers Ave, 
+North Charleston, SC 29405
+(843) 577-0132','','','Same','Regular box','60','23','1','0','0','FAC' )，执行时间：2017-12-29 13:14:51
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229131431143102' ，执行时间：2017-12-29 13:14:56
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229131350135002'，执行时间：2017-12-29 13:15:31
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='20171229131350135002' and ShelfNo = '77S77'，执行时间：2017-12-29 13:15:31
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229131350135002' ，执行时间：2017-12-29 13:15:31
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='20171229131350135002' and Status = '0' ，执行时间：2017-12-29 13:15:33
+【正常】：模块名称：MissionAssign-OutboundComplete-Actual，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229131350135002'，执行时间：2017-12-29 13:16:00
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:16:22
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='2017122913130913902' and ShelfNo = '77S77'，执行时间：2017-12-29 13:16:22
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913130913902' ，执行时间：2017-12-29 13:16:22
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='2017122913130913902' and Status = '0' ，执行时间：2017-12-29 13:16:24
+【正常】：模块名称：FrmOutbound-ClearRecord，执行语句：Delete from T_OutboundRecord where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:16:49
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status = '0' where OutboundID = '2017122913130913902' and Status = '2'，执行时间：2017-12-29 13:16:49
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='2017122913130913902' and Status = '0' ，执行时间：2017-12-29 13:16:52
+【正常】：模块名称：FrmOutbound-ClearRecord，执行语句：Delete from T_OutboundRecord where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:17:10
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status = '0' where OutboundID = '2017122913130913902' and Status = '2'，执行时间：2017-12-29 13:17:10
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='2017122913130913902' and Status = '0' ，执行时间：2017-12-29 13:17:28
+【正常】：模块名称：FrmOutbound-ClearRecord，执行语句：Delete from T_OutboundRecord where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:18:53
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status = '0' where OutboundID = '2017122913130913902' and Status = '2'，执行时间：2017-12-29 13:18:53
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017-12-29 13:18:56
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:19:43
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='2017122913130913902' and ShelfNo = '77S77'，执行时间：2017-12-29 13:19:44
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913130913902' ，执行时间：2017-12-29 13:19:44
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='2017122913130913902' and Status = '0' ，执行时间：2017-12-29 13:19:49
+【正常】：模块名称：FrmOutbound-ClearRecord，执行语句：Delete from T_OutboundRecord where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:22:33
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status = '0' where OutboundID = '2017122913130913902' and Status = '2'，执行时间：2017-12-29 13:22:33
+【正常】：模块名称：FrmOutbound-ClearRecord，执行语句：Delete from T_OutboundRecord where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:23:47
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status = '0' where OutboundID = '2017122913130913902' and Status = '2'，执行时间：2017-12-29 13:23:47
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:24:49
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='2017122913130913902' and ShelfNo = '77S77'，执行时间：2017-12-29 13:24:50
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913130913902' ，执行时间：2017-12-29 13:24:50
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='2017122913130913902' and Status = '0' ，执行时间：2017-12-29 13:24:57
+【正常】：模块名称：FrmOutbound-ClearRecord，执行语句：Delete from T_OutboundRecord where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:28:07
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status = '0' where OutboundID = '2017122913130913902' and Status = '2'，执行时间：2017-12-29 13:28:07
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017-12-29 13:28:10
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '2017122913130913902'，执行时间：2017-12-29 13:39:22
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='2017122913130913902' and ShelfNo = '77S77'，执行时间：2017-12-29 13:39:23
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913130913902' ，执行时间：2017-12-29 13:39:23
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='2017122913130913902' and Status = '0' ，执行时间：2017-12-29 13:39:27
+【正常】：模块名称：MissionAssign-OutboundComplete-Actual，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '2017122913130913902'，执行时间：2017-12-29 13:39:45
+【正常】：模块名称：OutboundDetailView-UpdateOutboundDetail，执行语句：delete from T_OutboundDetail where OutboundID = '20171229131431143102'，执行时间：2017-12-29 13:39:50
+【正常】：模块名称：，执行语句：Delete from T_Inventory  WHERE UserDefine1='20171229131431143102' and ShelfNo = '77S77'，执行时间：2017-12-29 13:39:50
+【正常】：模块名称：MissionAssign-VirtualOutboundAssign，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229131431143102' ，执行时间：2017-12-29 13:39:50
+【正常】：模块名称：，执行语句：Update T_Outbound Set Status ='2' WHERE OutboundID='20171229131431143102' and Status = '0' ，执行时间：2017-12-29 13:41:00
+【正常】：模块名称：MissionAssign-OutboundComplete-Actual，执行语句：delete from T_Inventory where ShelfNo = '77S77' and UserDefine1 = '20171229131431143102'，执行时间：2017-12-29 13:41:02
+【正常】：模块名称：FrmMain-ClearZeroInventory，执行语句：delete from t_inventory where quantity = 0 ，执行时间：2017-12-29 13:41:53
